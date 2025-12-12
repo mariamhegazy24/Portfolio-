@@ -184,10 +184,11 @@ export default function ProjectCarousel({ data }) {
                 ease: [0.4, 0, 0.2, 1]
               }
             }}
+           
           >
             <Box
               width="100%"
-              height={{ base: "220px", sm: "220px", md: "240px", lg: "250px" }}
+              height={{ base: "200px", sm: "220px", md: "240px", lg: "250px" }}
               overflow="hidden"
               position="relative"
             >
@@ -208,7 +209,7 @@ export default function ProjectCarousel({ data }) {
             </Box>
 
             <Box p={{ base: 3, md: "18px" }}
-
+            
             >
 
               <Box
@@ -228,7 +229,7 @@ export default function ProjectCarousel({ data }) {
 
               </Box>
 
-              <HStack my={{ base: 6, md: "40px" }} spacing={{ base: 3, md: "14px" }}>
+              <HStack mt={{ base: 6, sm: 6, md: 8 }} spacing={{ base: 3, md: "14px" }}>
                 <a href={card.video} target="_blank" rel="noopener noreferrer">
                   <Box
                     bg="purple.500"
