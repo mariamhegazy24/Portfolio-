@@ -161,7 +161,7 @@ export default function Hero() {
           />
         </Box>
 
-        <Text fontSize="30px" color="white">
+        <Text fontSize={{ base: "20px", md: "30px" }} color="white">
         Junior Front-End Developer 
         </Text>
     
