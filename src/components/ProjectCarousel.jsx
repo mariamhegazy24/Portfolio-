@@ -17,7 +17,7 @@ export default function ProjectCarousel({ data }) {
   const controls = useAnimation();
   const isMobile = useBreakpointValue({ base: true, md: false });
   const cardWidth = useBreakpointValue({ base: '280px', sm: '320px', md: '360px', lg: '420px' });
-  const cardHeight = useBreakpointValue({ base: '460px', sm: '480px', md: '520px', lg: '520px' });
+  const cardHeight = useBreakpointValue({ base: '500px', sm: '480px', md: '520px', lg: '520px' });
 
   // Add clones of the first and last items for infinite effect
   const items = [data[data.length - 1], ...data, data[0]];
@@ -228,6 +228,24 @@ export default function ProjectCarousel({ data }) {
                 </Box>
 
               </Box>
+              
+              <HStack mt={3} flexWrap="wrap" gap={2}>
+                {card.technologies && card.technologies.map((tech, techIndex) => (
+                  <Box
+                    key={techIndex}
+                    bg="rgb(147, 51, 234)"
+                    color="white"
+                    px={2}
+                    py={1}
+                    borderRadius="md"
+                    fontSize="xs"
+                    fontWeight="medium"
+                    whiteSpace="nowrap"
+                  >
+                    {tech}
+                  </Box>
+                ))}
+              </HStack>
 
               <HStack mt={{ base: 6, sm: 6, md: 8 }} spacing={{ base: 3, md: "14px" }}>
                 <a href={card.video} target="_blank" rel="noopener noreferrer">
@@ -241,7 +259,7 @@ export default function ProjectCarousel({ data }) {
                     display="flex"
                     alignItems="center"
                     gap="8px"
-                    fontSize={{ base: "14px", md: "16px" }}
+                    fontSize={{ base: "16px", md: "16px" }}
                   >
                     Demo <BiSolidVideos />
                   </Box>
@@ -257,7 +275,7 @@ export default function ProjectCarousel({ data }) {
                     display="flex"
                     alignItems="center"
                     gap="8px"
-                    fontSize={{ base: "14px", md: "16px" }}
+                    fontSize={{ base: "16px", md: "16px" }}
                   >
                     Code <FaGithub />
                   </Box>
