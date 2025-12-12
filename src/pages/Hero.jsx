@@ -83,14 +83,14 @@ export default function Hero() {
         <Text fontSize={{ base: "40px ", md: "50px" }} color="white">Hi, I am</Text>
 
         {/* IMPORTANT: give a large height to grow the font */}
-        <Box
+        <Box 
           style={{
             position: "relative",
-            height: "200px",
             width: "90%",
             maxWidth: "1200px",
           }}
-        >
+          
+          height={{base: "120px" ,  md: "200px"}}   >
           <TextPressure
             key={tick}
             text="Mariam Hegazy!"
