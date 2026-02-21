@@ -2,7 +2,6 @@ import { Box, Flex, Link, useBreakpointValue } from '@chakra-ui/react';
 
 export default function Navbar() {
   const isMobile = useBreakpointValue({ base: true, md: false });
-  
   const navItems = [
     { href: '#home', label: 'Home' },
     { href: '#about', label: 'About' },
