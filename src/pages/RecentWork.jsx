@@ -19,6 +19,7 @@ export default function RecentWork() {
       photo: "/dentalclinic.png",
       github: "https://github.com/mariamhegazy24/Dental-Clinic.git",
       video: "https://drive.google.com/drive/folders/196AJWMZnV5m4ZKdTsDcpEw-4cC8_1Pli?usp=drive_link",
+      demo: "https://dental-clinic-blush-five.vercel.app/",
       technologies: ["React", "TypeScript", "Firebase", "Redux Toolkit", "Chakra UI"]
     },
     { 
@@ -27,6 +28,7 @@ export default function RecentWork() {
       photo: "/tablya2.png", 
       github: "https://github.com/mariamhegazy24/TABLYA-APP.git", 
       video: "https://drive.google.com/file/d/1CPw-gTEyGo8ptvF05z5e2sLxvVdW0Iqw/view?usp=drive_link",
+      demo: "https://tablya-app-43jt.vercel.app/",
       technologies: ["React", "Chakra Ui", "Supabase", "Redux Toolkit"]
     },
     { 

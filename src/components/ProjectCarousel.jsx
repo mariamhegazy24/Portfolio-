@@ -253,23 +253,44 @@ export default function ProjectCarousel({ data }) {
                 ))}
               </HStack>
 
-              <HStack my={6} spacing={{ base: 3, md: "14px" }}>
-                <a href={card.video} target="_blank" rel="noopener noreferrer">
-                  <Box
-                    bg="purple.500"
-                    px={{ base: 3, md: "16px" }}
-                    py={{ base: 1, md: "8px" }}
-                    borderRadius="10px"
-                    color="white"
-                    cursor="pointer"
-                    display="flex"
-                    alignItems="center"
-                    gap="8px"
-                    fontSize={{ base: "16px", md: "16px" }}
-                  >
-                    Demo <BiSolidVideos />
-                  </Box>
-                </a>
+              <HStack my={6} spacing={{ base: 3, md: "14px" }} flexWrap="wrap">
+                {card.demo && (
+                  <a href={card.demo} target="_blank" rel="noopener noreferrer">
+                    <Box
+                      bg="purple.500"
+                      px={{ base: 3, md: "16px" }}
+                      py={{ base: 1, md: "8px" }}
+                      borderRadius="10px"
+                      color="white"
+                      cursor="pointer"
+                      display="flex"
+                      alignItems="center"
+                      gap="8px"
+                      fontSize={{ base: "16px", md: "16px" }}
+                    >
+                      Live Demo <BiSolidVideos />
+                    </Box>
+                  </a>
+                )}
+                
+                {card.video && (
+                  <a href={card.video} target="_blank" rel="noopener noreferrer">
+                    <Box
+                      bg="rgb(147, 51, 234)"
+                      px={{ base: 3, md: "16px" }}
+                      py={{ base: 1, md: "8px" }}
+                      borderRadius="10px"
+                      color="white"
+                      cursor="pointer"
+                      display="flex"
+                      alignItems="center"
+                      gap="8px"
+                      fontSize={{ base: "16px", md: "16px" }}
+                    >
+                      Video <BiSolidVideos />
+                    </Box>
+                  </a>
+                )}
 
                 <a href={card.github} target="_blank" rel="noopener noreferrer">
                   <Box
