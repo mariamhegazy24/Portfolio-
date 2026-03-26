@@ -17,7 +17,7 @@ export default function ProjectCarousel({ data }) {
   const controls = useAnimation();
   const isMobile = useBreakpointValue({ base: true, md: false });
   const cardWidth = useBreakpointValue({ base: '280px', sm: '320px', md: '360px', lg: '420px' });
-  const cardHeight = useBreakpointValue({ base: '500px', sm: '480px', md: '520px', lg: '520px' });
+  const cardHeight = useBreakpointValue({ base: '480px', sm: '520px', md: '580px', lg: '580px' });
 
   // Add clones of the first and last items for infinite effect
   const items = [data[data.length - 1], ...data, data[0]];
@@ -111,7 +111,7 @@ export default function ProjectCarousel({ data }) {
     <Box
       position="relative"
       width="100%"
-      height={{ base: '600px', sm: '600px', md: '600px' }}
+      height={{ base: '680px', sm: '680px', md: '700px' }}
       overflow="hidden"
       display="flex"
       alignItems="center"
@@ -138,7 +138,7 @@ export default function ProjectCarousel({ data }) {
             key={i}
             position="absolute"
             width={isCenter ? cardWidth : `calc(${cardWidth} * 0.8)`}
-            height={isCenter ? cardHeight : `calc(${cardHeight} * 0.8)`}
+            height={cardHeight}
             borderRadius="20px"
             overflow="hidden"
             bg="gray.800"
@@ -188,7 +188,7 @@ export default function ProjectCarousel({ data }) {
           >
             <Box
               width="100%"
-              height={{ base: "200px", sm: "220px", md: "240px", lg: "250px" }}
+              height={{ base: "180px", sm: "200px", md: "280px", lg: "300px" }}
               overflow="hidden"
               position="relative"
             >
@@ -209,7 +209,10 @@ export default function ProjectCarousel({ data }) {
             </Box>
 
             <Box p={{ base: 3, md: "18px" }}
-            
+              display="flex"
+              flexDirection="column"
+              height="100%"
+              overflow="hidden"
             >
 
               <Box
@@ -222,6 +225,9 @@ export default function ProjectCarousel({ data }) {
                   mt={{ base: 2, md: "10px" }}
                   opacity={0.9}
                   flex="1"
+                  overflow="auto"
+                  maxHeight="180px"
+                  pr={2}
 
                 >
                   {card.description}
@@ -247,7 +253,7 @@ export default function ProjectCarousel({ data }) {
                 ))}
               </HStack>
 
-              <HStack mt={{ base: 6, sm: 6, md: 8 }} spacing={{ base: 3, md: "14px" }}>
+              <HStack my={6} spacing={{ base: 3, md: "14px" }}>
                 <a href={card.video} target="_blank" rel="noopener noreferrer">
                   <Box
                     bg="purple.500"

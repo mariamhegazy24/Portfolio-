@@ -15,20 +15,11 @@ export default function RecentWork() {
   const Data = [
      {
       title: "Dental Clinic Management System",
-      description:"PureSmile is a comprehensive, modern web application designed for dental clinics to manage appointments, patients, and clinical showcases. This project was developed as a personal application by a former dentist, combining clinical expertise with modern web development to create a tailored solution for the dental profession. Built with a focus on premium aesthetics and user experience, it provides both a patient-facing portal and a robust doctor dashboard.",
+      description:"PureSmile is a modern web application for dental clinics, managing appointments, patients, and clinical showcases. Developed by a former dentist, it combines clinical expertise with a sleek, user-friendly experience for both patients and doctors",
       photo: "/dentalclinic.png",
       github: "https://github.com/mariamhegazy24/Dental-Clinic.git",
       video: "https://drive.google.com/drive/folders/196AJWMZnV5m4ZKdTsDcpEw-4cC8_1Pli?usp=drive_link",
       technologies: ["React", "TypeScript", "Firebase", "Redux Toolkit", "Chakra UI"]
-    },
-
-    { 
-      title: "Tech Blog APP", 
-      description: "A modern blogging platform where users can browse posts, create new articles, edit, delete, and publish/unpublish content. Built with React, Tailwind CSS, and json-server authentication", 
-      photo: "/tech1.png", 
-      github: "https://github.com/mariamhegazy24/react-project.git", 
-      video: "https://drive.google.com/file/d/1M7qR_ngw79uejTcfch6vJNjBS2KTK-pW/view?usp=drive_link",
-      technologies: ["React", "Tailwind CSS", "JSON Server" , "JSON Server Auth"] 
     },
     { 
       title: "Tablya Homemade Food APP", 
@@ -37,6 +28,14 @@ export default function RecentWork() {
       github: "https://github.com/mariamhegazy24/TABLYA-APP.git", 
       video: "https://drive.google.com/file/d/1CPw-gTEyGo8ptvF05z5e2sLxvVdW0Iqw/view?usp=drive_link",
       technologies: ["React", "Chakra Ui", "Supabase", "Redux Toolkit"]
+    },
+    { 
+      title: "Tech Blog APP", 
+      description: "A modern blogging platform where users can browse posts, create new articles, edit, delete, and publish/unpublish content. Built with React, Tailwind CSS, and json-server authentication", 
+      photo: "/tech1.png", 
+      github: "https://github.com/mariamhegazy24/react-project.git", 
+      video: "https://drive.google.com/file/d/1M7qR_ngw79uejTcfch6vJNjBS2KTK-pW/view?usp=drive_link",
+      technologies: ["React", "Tailwind CSS", "JSON Server" , "JSON Server Auth"] 
     },
     { 
       title: "Mobile To-Do List App (React Native)", 
